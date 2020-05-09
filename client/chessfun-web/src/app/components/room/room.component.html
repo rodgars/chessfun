@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-sm">
+    <app-room-menu></app-room-menu>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm">
+    <app-player-status [player]="view.playerTop"></app-player-status>
+  </div>
+  
+</div>
+<div class="row">
+  <div class="col-sm">
+    <app-board [match]="match" [connectionId]="connectionId"></app-board>
+  </div>
+  
+</div>
+<div class="row">
+  <div class="col-sm">
+    <app-player-status [player]="view.playerBottom"></app-player-status>
+  </div>
+</div>

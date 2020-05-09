@@ -1,0 +1,7 @@
+<div class="container">
+  <div style="width: 400px;">
+    <app-login *ngIf="!foundMatch"></app-login>
+    <app-room *ngIf="foundMatch" [match]="match" [connectionId]="connectionId"></app-room>
+    <app-spinner [isSpinning]="isAwaitingPlayer"></app-spinner>
+  </div>
+</div>
